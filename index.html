@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Player Music</title>
+  </head>
+  <body>
+    <img src="assets/img/jazz.jpg" alt="" />
+    <div id="description">
+      <h2>Music Name</h2>
+      <em>Singer's name</em>
+    </div>
+    <div id="container-audio">
+      <audio class="music" src="assets/music/King Porter Stomp - Joel Cummins.mp3"></audio>
+    </div>
+    <div id="controls">
+      <img src="assets/img/skip_previous.svg" onclick="skip_previous()" alt="" />
+
+      <img id="play" src="assets/img/play_circle.svg" onclick="play()" alt="" />
+
+      <img src="assets/img/stop_circle.svg" onclick="stop()" alt="" />
+
+      <img src="assets/img/skip_next.svg" onclick="skip_next()" alt="" />
+    </div>
+    <div id="duration">
+      <div id="bar">
+        <progress value="0.5" max="1"></progress>
+        <div id="point-bar"></div>
+      </div>
+      <div id="time">
+        <p class="start-time">00:00</p>
+        <p class="theEnd-time">99:99</p>
+      </div>
+    </div>
+    <script src="scrip.js"></script>
+  </body>
+</html>
