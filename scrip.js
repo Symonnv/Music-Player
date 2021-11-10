@@ -1,5 +1,4 @@
 let music = document.querySelector('.music')
-let cont = 0
 
 function play() {
   music.play()
