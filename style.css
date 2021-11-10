@@ -18,7 +18,6 @@ body {
   height: 280px;
 }
 
-
 #duration {
   margin-top: 20px;
 }
@@ -67,17 +66,23 @@ progress {
   margin-top: 15px;
 }
 
-.control-play, .control-stop {
+.control-play,
+.control-stop,
+.control-pause {
   width: 60px;
   cursor: pointer;
 }
 
-.control-skip_previous, .control-skip_next {
+.control-skip_previous,
+.control-skip_next {
   width: 50px;
   cursor: pointer;
 }
 
-.control-stop {
+.control-stop,
+.control-pause {
   display: none;
 }
+
+
 
