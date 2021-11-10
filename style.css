@@ -8,16 +8,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
   color: #ddd;
   background-color: #333;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #img-music {
-  height: 270px;
+  height: 280px;
 }
 
-#description {
-}
 
 #duration {
   margin-top: 20px;
@@ -29,21 +29,55 @@ body {
   width: 280px;
 }
 
-#bar{
+#bar {
   width: 280px;
   height: 5px;
-  border: 1px solid #eee;
+  border: 1.9px solid #eee;
   border-radius: 5px;
   display: flex;
   text-align: center;
+  justify-content: flex-start;
 }
-progress{
+progress {
   width: 50%;
   height: 5px;
+  background-color: #333;
 }
-#point-bar{
+#point-bar {
   width: 15px;
   height: 15px;
   background-color: #eee;
   border-radius: 50%;
+  margin-top: -5px;
+  margin-left: -3px;
 }
+
+#time {
+  margin-top: 3px;
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+}
+
+#controls {
+  width: 280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.control-play, .control-stop {
+  width: 60px;
+  cursor: pointer;
+}
+
+.control-skip_previous, .control-skip_next {
+  width: 50px;
+  cursor: pointer;
+}
+
+.control-stop {
+  display: none;
+}
+

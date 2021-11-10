@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Player Music</title>
   </head>
@@ -27,13 +33,33 @@
       </div>
     </div>
     <div id="controls">
-      <img src="assets/img/skip_previous.svg" onclick="skip_previous()" alt="" />
+      <img
+        class="controls-music control-skip_previous"
+        src="assets/img/skip_previous.svg"
+        onclick="skip_previous()"
+        alt=""
+      />
 
-      <img id="play" src="assets/img/play_circle.svg" onclick="play()" alt="" />
+      <img
+        class="controls-music control-play"
+        src="assets/img/play_circle.svg"
+        onclick="play()"
+        alt=""
+      />
 
-      <img src="assets/img/stop_circle.svg" onclick="stop()" alt="" />
+      <img
+        class="controls-music control-stop"
+        src="assets/img/stop_circle.svg"
+        onclick="stop()"
+        alt=""
+      />
 
-      <img src="assets/img/skip_next.svg" onclick="skip_next()" alt="" />
+      <img
+        class="controls-music control-skip_next"
+        src="assets/img/skip_next.svg"
+        onclick="skip_next()"
+        alt=""
+      />
     </div>
     <script src="scrip.js"></script>
   </body>
