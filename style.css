@@ -83,3 +83,20 @@ progress {
 .control-pause {
   display: none;
 }
+
+@media only screen and (min-width: 620px) {
+  body {
+    background-color: #464646;
+  }
+
+  main {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: #333;
+    position: relative;
+  }
+}

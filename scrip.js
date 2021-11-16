@@ -29,8 +29,8 @@ let music = document.querySelector('.music')
 let indexMusic = 0
 let musicDuration = document.querySelector('.theEnd-time')
 let image = document.querySelector('img')
-let musicName = document.querySelector('.description h2')
-let artistName = document.querySelector('.description em')
+let musicName = document.querySelector('#description h2')
+let artistName = document.querySelector('#description em')
 
 renderMusic(indexMusic)
 
