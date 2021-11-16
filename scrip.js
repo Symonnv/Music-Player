@@ -60,6 +60,7 @@ function skip_previous() {
   if (indexMusic < 0) {
     indexMusic = 2
   }
+
   renderMusic(indexMusic)
   document.querySelector('.control-play').style.display = 'block'
   document.querySelector('.control-pause').style.display = 'none'
@@ -70,6 +71,7 @@ function skip_next() {
   if (indexMusic > 2) {
     indexMusic = 0
   }
+
   renderMusic(indexMusic)
   document.querySelector('.control-play').style.display = 'block'
   document.querySelector('.control-pause').style.display = 'none'
