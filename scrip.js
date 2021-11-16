@@ -22,7 +22,7 @@ let musicList = [
     artist: 'Unicorn Heads',
     src: 'assets/music/Nine Lives - Unicorn Heads.mp3',
     img: 'assets/img/eletronica.jpg'
-  }
+  },
 ]
 
 let music = document.querySelector('.music')
@@ -58,7 +58,7 @@ function stop() {
 function skip_previous() {
   indexMusic--
   if (indexMusic < 0) {
-    indexMusic = 2
+    indexMusic = (musicList.length - 1) // (total song size) - 1
   }
 
   renderMusic(indexMusic)
@@ -68,7 +68,8 @@ function skip_previous() {
 }
 function skip_next() {
   indexMusic++
-  if (indexMusic > 2) {
+  if (indexMusic > (musicList.length - 1)) { //(total song size) - 1
+  
     indexMusic = 0
   }
 
